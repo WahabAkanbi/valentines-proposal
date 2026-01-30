@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Photo Grid -->
+    <div class="photo-background" id="photoBackground"></div>
+    <div class="overlay"></div>
+    
+    <!-- Main Question Container -->
+    <div class="container" id="mainContainer">
+        <h1 class="title">Will You Be My Valentine?</h1>
+        <p class="subtitle">Choose wisely... 💖</p>
+        
+        <div class="choices-container">
+            <!-- Yes Option -->
+            <div class="choice-card">
+                <img src="image8.jpg" alt="Yes!" class="choice-image">
+                <button class="btn btn-yes" id="yesBtn">Yes! 💕</button>
+            </div>
+            
+            <!-- No Option -->
+            <div class="choice-card" id="noCard">
+                <img src="image10.jpg" alt="No" class="choice-image">
+                <button class="btn btn-no" id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Black Screen Error -->
+    <div class="black-screen" id="blackScreen">
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+    
+    <!-- Yes Response -->
+    <div class="response-container" id="yesResponse">
+        <div class="celebration">
+            <div class="heart-animation">
+                <div class="big-heart">💕</div>
+            </div>
+            <div class="message-sequence">
+                <div class="message-1" id="message1">
+                    <h1 class="response-title">Best answer possible.</h1>
+                    <p class="response-subtitle">Valentine's Day just got a lot better.</p>
+                </div>
+                <div class="message-2" id="message2">
+                    <p class="details-text">I'll take care of the details.<br>Just be ready at 7.</p>
+                </div>
+            </div>
+            <div class="countdown-container" id="countdownContainer">
+                <p class="countdown-text">Until our Valentine's Day: <span id="countdown"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Crash Screen -->
+    <div class="crash-screen" id="crashScreen">
+        <div class="crash-content">
+            <h1 class="crash-title">💔 SYSTEM ERROR 💔</h1>
+            <div class="error-code">ERROR CODE: INVALID_RESPONSE_404</div>
+            <p class="crash-message">
+                The option "No" is not available in this relationship.<br><br>
+                <strong>CRITICAL ERROR:</strong> Attempting to deny Valentine's request from your boyfriend.<br><br>
+                This action conflicts with the following parameters:<br>
+                ✗ You are my girlfriend<br>
+                ✗ I love you<br>
+                ✗ You love me<br>
+                ✗ We're perfect together<br><br>
+                System will now restart and restore to valid options only...
+            </p>
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            <p class="restart-text">Restarting in <span id="countdown">3</span>...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
